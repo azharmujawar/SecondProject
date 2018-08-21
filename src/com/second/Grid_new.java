@@ -42,13 +42,17 @@ public class Grid_new {
 		
 		WebElement login=driver.findElement(By.id("loginbutton"));
 		login.click();
+		
+		System.out.println("1 st commit git session");
 		}
 	
-	public void afterTest()
+	public void afterTest() throws InterruptedException
 	{
+		
+		Thread.sleep(5000);
 		driver.quit();
 	}
-	public static void main(String[] args) throws MalformedURLException {
+	public static void main(String[] args) throws MalformedURLException, InterruptedException {
 		
 		
 		Grid_new ref=new Grid_new();
